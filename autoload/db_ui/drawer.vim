@@ -376,27 +376,27 @@ function! s:drawer.render_help() abort
   if g:db_ui_show_help
     call self.add('" Press ? for help', 'noaction', 'help', '', '', 0)
     call self.add('', 'noaction', 'help', '', '', 0)
-  endif
 
-  if self.show_help
-    call self.add('" o - Open/Toggle selected item', 'noaction', 'help', '', '', 0)
-    call self.add('" S - Open/Toggle selected item in vertical split', 'noaction', 'help', '', '', 0)
-    call self.add('" d - Delete selected item', 'noaction', 'help', '', '', 0)
-    call self.add('" R - Redraw', 'noaction', 'help', '', '', 0)
-    call self.add('" A - Add connection', 'noaction', 'help', '', '', 0)
-    call self.add('" H - Toggle database details', 'noaction', 'help', '', '', 0)
-    call self.add('" r - Rename/Edit buffer/connection/saved query', 'noaction', 'help', '', '', 0)
-    call self.add('" q - Close drawer', 'noaction', 'help', '', '', 0)
-    call self.add('" <C-j>/<C-k> - Go to last/first sibling', 'noaction', 'help', '', '', 0)
-    call self.add('" K/J - Go to prev/next sibling', 'noaction', 'help', '', '', 0)
-    call self.add('" <C-p>/<C-n> - Go to parent/child node', 'noaction', 'help', '', '', 0)
-    call self.add('" <Leader>W - (sql) Save currently opened query', 'noaction', 'help', '', '', 0)
-    call self.add('" <Leader>E - (sql) Edit bind parameters in opened query', 'noaction', 'help', '', '', 0)
-    call self.add('" <Leader>S - (sql) Execute query in visual or normal mode', 'noaction', 'help', '', '', 0)
-    call self.add('" <C-]> - (.dbout) Go to entry from foreign key cell', 'noaction', 'help', '', '', 0)
-    call self.add('" <motion>ic - (.dbout) Operator pending mapping for cell value', 'noaction', 'help', '', '', 0)
-    call self.add('" <Leader>R - (.dbout) Toggle expanded view', 'noaction', 'help', '', '', 0)
-    call self.add('', 'noaction', 'help', '', '', 0)
+    if self.show_help
+      call self.add('" o - Open/Toggle selected item', 'noaction', 'help', '', '', 0)
+      call self.add('" S - Open/Toggle selected item in vertical split', 'noaction', 'help', '', '', 0)
+      call self.add('" d - Delete selected item', 'noaction', 'help', '', '', 0)
+      call self.add('" R - Redraw', 'noaction', 'help', '', '', 0)
+      call self.add('" A - Add connection', 'noaction', 'help', '', '', 0)
+      call self.add('" H - Toggle database details', 'noaction', 'help', '', '', 0)
+      call self.add('" r - Rename/Edit buffer/connection/saved query', 'noaction', 'help', '', '', 0)
+      call self.add('" q - Close drawer', 'noaction', 'help', '', '', 0)
+      call self.add('" <C-j>/<C-k> - Go to last/first sibling', 'noaction', 'help', '', '', 0)
+      call self.add('" K/J - Go to prev/next sibling', 'noaction', 'help', '', '', 0)
+      call self.add('" <C-p>/<C-n> - Go to parent/child node', 'noaction', 'help', '', '', 0)
+      call self.add('" <Leader>W - (sql) Save currently opened query', 'noaction', 'help', '', '', 0)
+      call self.add('" <Leader>E - (sql) Edit bind parameters in opened query', 'noaction', 'help', '', '', 0)
+      call self.add('" <Leader>S - (sql) Execute query in visual or normal mode', 'noaction', 'help', '', '', 0)
+      call self.add('" <C-]> - (.dbout) Go to entry from foreign key cell', 'noaction', 'help', '', '', 0)
+      call self.add('" <motion>ic - (.dbout) Operator pending mapping for cell value', 'noaction', 'help', '', '', 0)
+      call self.add('" <Leader>R - (.dbout) Toggle expanded view', 'noaction', 'help', '', '', 0)
+      call self.add('', 'noaction', 'help', '', '', 0)
+    endif
   endif
 endfunction
 
